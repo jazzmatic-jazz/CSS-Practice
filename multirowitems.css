@@ -11,6 +11,9 @@
       /*the value for grid-row-end should be one greater than the row at which you want the grid item to end*/
     grid-row-start: 5;
     grid-row-end: 7;
+    
+    /*grid-row as shorthand for grid-row-start and grid-row-end*/
+    grid-row: 5/7;
   }
   
   .box {
