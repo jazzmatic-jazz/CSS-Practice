@@ -40,7 +40,6 @@ body {
 
 .page-title h1 {
   display: inline-block;
-  width: 270px;
 }
 
 .main {
@@ -115,11 +114,40 @@ nav a {
   bottom: 2px;
 }
 
-@media only screen and (max-width: 480px)
-/* @media only screen and (min-width: 320px  max-width: 480px) */
-{
-  .page-title{
+
+@media only screen and (max-width: 480px) {
+  .page-title {
     width: 270px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
+  .gallery-item .thumbnail {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-resolution: 150dpi) {
+  .logo {
+    background-image: url("../img/spaceship@2x.png");
+  }
+}
+
+@media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
+  .page-description {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .page-title, 
+  .page-description {
+    float: left;
+    width: 20em;
+  }
+
+  .page-description {
+      text-align: left;
   }
 }
 /*CSS uses media queries to adapt a website’s content to different screen sizes. 
@@ -130,3 +158,7 @@ and apply different CSS styles depending on the width of the screen.*/
 the CSS compiler on how to parse the rest of the rule.*/
 
 /*      =>  only screen — Indicates what types of devices should use this rule. */
+
+/*/* To target by resolution, we can use the min-resolution and max-resolution media features. 
+These media features accept a resolution value 
+in either dots per inch (dpi) or dots per centimeter (dpc)*/
