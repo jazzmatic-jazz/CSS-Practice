@@ -1,0 +1,164 @@
+html {
+    height: 100%
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 12px;
+    line-height: 1;
+    font-size: 20px;
+    line-height: 1.5;
+    /* If the line-height is too large, lines will be separated by too much distance.
+     The default value of line-height in browsers is around 1.2—*/
+    letter-spacing: 0.05em;
+    /*Providing a value to this property (for example, 0.5em) will expand or contract the space between letters*/
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  input[type='text'] {
+    display: block;
+    width: 100%;
+    border-color: #808080;
+    outline: none;
+    border-style: solid;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    background: lightgray;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin: 0
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #000000
+  }
+  
+  .page-container {
+    padding: 30px;
+    display: flex;
+    height: 90%;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+  
+  .form-title {
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .instructions {
+   
+    text-align: left;
+    /* text-align: justify;*/
+    min-width: 45ch;
+    max-width: 85ch;
+    /*Paragraph width can also impact readability. It is recommended to have 45 to 85 characters per line,*/
+    /*1ch being equivalent to the width of the zero (0) character*/
+
+  }
+  .form-container {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  .survey-form {
+    background: #C3C3C3;
+    color: #000000;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px 20px;
+  
+  }
+  
+  @media print {
+    nav {
+      display: none;
+    }
+  
+    a[href^="http"]:after {
+      content: " (" attr(href) ")";
+    }
+  }
+
+  a{  
+    text-decoration: underline;
+  }
+
+  a:visited{
+    color: purple;
+  }/*To let users know they have visited a link from your page previously,
+   the :visited selector can be used*/
+
+  .survey-btn-container {
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 20px;
+
+  }
+  .survey-form input {
+    border-color: #000000;
+    }
+
+    .btn:hover{
+      cursor: pointer;
+    }
+    
+  
+  .btn {
+    height: 50px;
+    width: 47%;
+  }
+  
+  .protected-link-container {
+    text-align: right;
+    padding: 20px 0;
+  }
+  .protected-link-container a {
+    display: none;
+  }
+/*You can hide an element from everyone by setting visibility to hidden or display to none.*/  
+  
+  input:focus{
+    border-color: blue;
+  }/*Without the :focus selector providing additional styling, 
+  often using color or shadowing to show focus*/
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-container label {
+    padding: 5px 0;
+    font-size: 20px;
+  }
